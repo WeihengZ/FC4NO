@@ -1,0 +1,25 @@
+
+Currently Loaded Modules:
+  1) gcc/11.4.0      3) cuda/11.8.0         5) slurm-env/0.1
+  2) openmpi/4.1.6   4) cue-login-env/1.1   6) default-s11
+
+ 
+
+job is starting on gpub050.delta.ncsa.illinois.edu
+/u/wzhong/miniconda3/bin/python3
+# packages in environment at /u/wzhong/miniconda3:
+#
+# Name                    Version                   Build  Channel
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/u/wzhong/PhD/FairCompare/models/PNE.py:174: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  self.grid = torch.Tensor(self.grid).view(2, -1)  # (2, 45, 45) -> (2, 45 * 45)
+Creating data loaders...
+Creating data loaders...
+Not finding in path 2
+Loading pretrained model ...
+model training ...
+slurmstepd: error: *** JOB 8981507 ON gpub050 CANCELLED AT 2025-04-09T08:04:14 ***

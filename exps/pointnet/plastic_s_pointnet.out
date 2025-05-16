@@ -1,0 +1,104 @@
+
+Currently Loaded Modules:
+  1) openmpi/4.1.6
+
+ 
+
+job is starting on gpua031.delta.ncsa.illinois.edu
+/u/wzhong/miniconda3/bin/python3
+# packages in environment at /u/wzhong/miniconda3:
+#
+# Name                    Version                   Build  Channel
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+No Nvidia modulus is detected.
+Creating data loaders...
+Not finding in path 1
+Creating data loaders...
+Data loaders created: Train=6000, Val=1000, Test=3000
+Loading pretrained model ...
+No trained model
+model training ...
+validating
+Current best validation errs by now: 1.8710703738629817
+Epoch 1/400, Loss: 0.12448664
+Epoch 2/400, Loss: 0.03236594
+Epoch 3/400, Loss: 0.03822007
+Epoch 4/400, Loss: 0.06292578
+Epoch 5/400, Loss: 0.14539301
+validating
+Current best validation errs by now: 1.6314332959353923
+Epoch 6/400, Loss: 0.19344354
+Epoch 7/400, Loss: 0.04333793
+Epoch 8/400, Loss: 0.06144147
+Epoch 9/400, Loss: 0.04651523
+Epoch 10/400, Loss: 0.03599656
+validating
+Current best validation errs by now: 1.6263808664679527
+Epoch 11/400, Loss: 0.04530774
+Epoch 12/400, Loss: 0.04449495
+Epoch 13/400, Loss: 0.12165375
+Epoch 14/400, Loss: 0.02725736
+Epoch 15/400, Loss: 0.15966095
+validating
+Current best validation errs by now: 1.6231872655302286
+Epoch 16/400, Loss: 0.05353701
+Epoch 17/400, Loss: 0.04082096
+Epoch 18/400, Loss: 0.13324788
+Epoch 19/400, Loss: 0.03170053
+Epoch 20/400, Loss: 0.04450905
+validating
+Current best validation errs by now: 1.6228856715857982
+Epoch 21/400, Loss: 0.04984462
+Epoch 22/400, Loss: 0.02915808
+Epoch 23/400, Loss: 0.02375085
+Epoch 24/400, Loss: 0.06453091
+Epoch 25/400, Loss: 0.04461579
+validating
+Current best validation errs by now: 1.6228856715857982
+Epoch 26/400, Loss: 0.05661584
+Epoch 27/400, Loss: 0.04491412
+Epoch 28/400, Loss: 0.03624470
+Epoch 29/400, Loss: 0.17095186
+Epoch 30/400, Loss: 0.03166631
+validating
+Current best validation errs by now: 1.6228856715857982
+Epoch 31/400, Loss: 0.05662799
+Epoch 32/400, Loss: 0.07319319
+Epoch 33/400, Loss: 0.03091360
+Epoch 34/400, Loss: 0.02922613
+Epoch 35/400, Loss: 0.04257947
+validating
+Current best validation errs by now: 1.6224941588938235
+Epoch 36/400, Loss: 0.10625345
+Epoch 37/400, Loss: 0.05274663
+Epoch 38/400, Loss: 0.08716264
+Epoch 39/400, Loss: 0.02647838
+Epoch 40/400, Loss: 0.14885446
+validating
+Current best validation errs by now: 1.6224941588938235
+Epoch 41/400, Loss: 0.02586070
+Epoch 42/400, Loss: 0.02713678
+Epoch 43/400, Loss: 0.02623181
+Epoch 44/400, Loss: 0.04890199
+Epoch 45/400, Loss: 0.03679276
+validating
+Current best validation errs by now: 1.6223528805375098
+Epoch 46/400, Loss: 0.04170679
+Epoch 47/400, Loss: 0.02609558
+Epoch 48/400, Loss: 0.11010846
+Epoch 49/400, Loss: 0.10494155
+Epoch 50/400, Loss: 0.20786354
+validating
+Current best validation errs by now: 1.6222009728848934
+Epoch 51/400, Loss: 0.10048885
+Epoch 52/400, Loss: 0.14854300
+Epoch 53/400, Loss: 0.05261915
+Epoch 54/400, Loss: 0.08808137
+Epoch 55/400, Loss: 0.02541830
+validating
+Current best validation errs by now: 1.6222009728848934
+Epoch 56/400, Loss: 0.07631565
+Epoch 57/400, Loss: 0.02446723
+Epoch 58/400, Loss: 0.02583806
+slurmstepd: error: *** JOB 9173859 ON gpua031 CANCELLED AT 2025-04-16T19:33:30 ***

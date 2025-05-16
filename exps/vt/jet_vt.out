@@ -1,0 +1,235 @@
+
+====================
+== NVIDIA Modulus ==
+====================
+
+NVIDIA Release 24.09 (build 18526012)
+Modulus PyPi Version 0.9.0 (Git Commit: eb01d2a)
+Modulus Sym PyPi Version 1.7.0 (Git Commit: 249b76a)
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 12.6 driver version 560.35.03 with kernel driver version 550.144.03.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+job is starting on gpua060.delta.ncsa.illinois.edu
+Python 3.10.12
+/usr/local/lib/python3.10/dist-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/usr/local/lib/python3.10/dist-packages/torch/functional.py:512: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3587.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Warp 1.3.3 initialized:
+   CUDA Toolkit 12.5, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A100-SXM4-40GB" (39 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /u/wzhong/.cache/warp/1.3.3
+Creating data loaders...
+Data loaders created: Train=1282, Val=213, Test=643
+Creating data loaders...
+Not finding in path 2
+Loading pretrained model ...
+model training ...
+validating
+/usr/local/lib/python3.10/dist-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv3d(
+Module modulus.models.figconvnet.warp_neighbor_search 7da5518 load on device 'cuda:0' took 695.40 ms  (compiled)
+Current best validation errs by now: 5.985604008598507
+/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:744: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Epoch 1/400, Loss: 0.00038339
+Epoch 2/400, Loss: 0.00029654
+Epoch 3/400, Loss: 0.00005821
+Epoch 4/400, Loss: 0.00012094
+Epoch 5/400, Loss: 0.00010894
+validating
+Current best validation errs by now: 0.4340215910208617
+Epoch 6/400, Loss: 0.00007520
+Epoch 7/400, Loss: 0.00015636
+Epoch 8/400, Loss: 0.00025703
+Epoch 9/400, Loss: 0.00005648
+Epoch 10/400, Loss: 0.00003255
+validating
+Current best validation errs by now: 0.39904041203534657
+Epoch 11/400, Loss: 0.00019931
+Epoch 12/400, Loss: 0.00006865
+Epoch 13/400, Loss: 0.00012460
+Epoch 14/400, Loss: 0.00027683
+Epoch 15/400, Loss: 0.00005788
+validating
+Current best validation errs by now: 0.3809645692227592
+Epoch 16/400, Loss: 0.00021672
+Epoch 17/400, Loss: 0.00002770
+Epoch 18/400, Loss: 0.00006382
+Epoch 19/400, Loss: 0.00005506
+Epoch 20/400, Loss: 0.00009505
+validating
+Current best validation errs by now: 0.37638862459032746
+Epoch 21/400, Loss: 0.00007094
+Epoch 22/400, Loss: 0.00009024
+Epoch 23/400, Loss: 0.00006841
+Epoch 24/400, Loss: 0.00016726
+Epoch 25/400, Loss: 0.00002883
+validating
+Current best validation errs by now: 0.3686653712825596
+Epoch 26/400, Loss: 0.00006124
+Epoch 27/400, Loss: 0.00005225
+Epoch 28/400, Loss: 0.00007342
+Epoch 29/400, Loss: 0.00008985
+Epoch 30/400, Loss: 0.00003405
+validating
+Current best validation errs by now: 0.3686653712825596
+Epoch 31/400, Loss: 0.00005076
+Epoch 32/400, Loss: 0.00004596
+Epoch 33/400, Loss: 0.00004533
+Epoch 34/400, Loss: 0.00005490
+Epoch 35/400, Loss: 0.00002531
+validating
+Current best validation errs by now: 0.3666814862282623
+Epoch 36/400, Loss: 0.00002390
+Epoch 37/400, Loss: 0.00001829
+Epoch 38/400, Loss: 0.00002077
+Epoch 39/400, Loss: 0.00007771
+Epoch 40/400, Loss: 0.00001793
+validating
+Current best validation errs by now: 0.3666814862282623
+Epoch 41/400, Loss: 0.00005337
+Epoch 42/400, Loss: 0.00004084
+Epoch 43/400, Loss: 0.00003911
+Epoch 44/400, Loss: 0.00011079
+Epoch 45/400, Loss: 0.00005049
+validating
+Current best validation errs by now: 0.3657704280435759
+Epoch 46/400, Loss: 0.00008055
+Epoch 47/400, Loss: 0.00002833
+Epoch 48/400, Loss: 0.00003549
+Epoch 49/400, Loss: 0.00002652
+Epoch 50/400, Loss: 0.00003197
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 51/400, Loss: 0.00007685
+Epoch 52/400, Loss: 0.00007228
+Epoch 53/400, Loss: 0.00008085
+Epoch 54/400, Loss: 0.00002996
+Epoch 55/400, Loss: 0.00005038
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 56/400, Loss: 0.00002534
+Epoch 57/400, Loss: 0.00003261
+Epoch 58/400, Loss: 0.00001825
+Epoch 59/400, Loss: 0.00004452
+Epoch 60/400, Loss: 0.00006496
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 61/400, Loss: 0.00007380
+Epoch 62/400, Loss: 0.00007722
+Epoch 63/400, Loss: 0.00003840
+Epoch 64/400, Loss: 0.00005742
+Epoch 65/400, Loss: 0.00002075
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 66/400, Loss: 0.00004332
+Epoch 67/400, Loss: 0.00006404
+Epoch 68/400, Loss: 0.00006524
+Epoch 69/400, Loss: 0.00004288
+Epoch 70/400, Loss: 0.00004281
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 71/400, Loss: 0.00003258
+Epoch 72/400, Loss: 0.00002322
+Epoch 73/400, Loss: 0.00002523
+Epoch 74/400, Loss: 0.00002721
+Epoch 75/400, Loss: 0.00002004
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 76/400, Loss: 0.00006891
+Epoch 77/400, Loss: 0.00005730
+Epoch 78/400, Loss: 0.00002445
+Epoch 79/400, Loss: 0.00003003
+Epoch 80/400, Loss: 0.00002567
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 81/400, Loss: 0.00002529
+Epoch 82/400, Loss: 0.00004703
+Epoch 83/400, Loss: 0.00001802
+Epoch 84/400, Loss: 0.00002760
+Epoch 85/400, Loss: 0.00004657
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 86/400, Loss: 0.00004996
+Epoch 87/400, Loss: 0.00006732
+Epoch 88/400, Loss: 0.00001227
+Epoch 89/400, Loss: 0.00001190
+Epoch 90/400, Loss: 0.00002589
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 91/400, Loss: 0.00000968
+Epoch 92/400, Loss: 0.00002777
+Epoch 93/400, Loss: 0.00002710
+Epoch 94/400, Loss: 0.00002559
+Epoch 95/400, Loss: 0.00002805
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 96/400, Loss: 0.00003208
+Epoch 97/400, Loss: 0.00003189
+Epoch 98/400, Loss: 0.00002734
+Epoch 99/400, Loss: 0.00004001
+Epoch 100/400, Loss: 0.00003214
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 101/400, Loss: 0.00001766
+Epoch 102/400, Loss: 0.00001651
+Epoch 103/400, Loss: 0.00002742
+Epoch 104/400, Loss: 0.00002318
+Epoch 105/400, Loss: 0.00003588
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 106/400, Loss: 0.00001129
+Epoch 107/400, Loss: 0.00002222
+Epoch 108/400, Loss: 0.00004286
+Epoch 109/400, Loss: 0.00005522
+Epoch 110/400, Loss: 0.00002989
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 111/400, Loss: 0.00005186
+Epoch 112/400, Loss: 0.00003342
+Epoch 113/400, Loss: 0.00002242
+Epoch 114/400, Loss: 0.00004696
+Epoch 115/400, Loss: 0.00001745
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 116/400, Loss: 0.00002957
+Epoch 117/400, Loss: 0.00002686
+Epoch 118/400, Loss: 0.00001089
+Epoch 119/400, Loss: 0.00002720
+Epoch 120/400, Loss: 0.00002701
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 121/400, Loss: 0.00001304
+Epoch 122/400, Loss: 0.00001988
+Epoch 123/400, Loss: 0.00005815
+Epoch 124/400, Loss: 0.00001517
+Epoch 125/400, Loss: 0.00003652
+validating
+Current best validation errs by now: 0.36483296619054856
+Epoch 126/400, Loss: 0.00002186
+slurmstepd: error: *** JOB 8962228 ON gpua060 CANCELLED AT 2025-04-09T03:23:54 DUE TO TIME LIMIT ***

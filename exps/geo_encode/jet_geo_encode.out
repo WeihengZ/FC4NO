@@ -1,0 +1,518 @@
+
+Currently Loaded Modules:
+  1) openmpi/4.1.6
+
+ 
+
+job is starting on gpua015.delta.ncsa.illinois.edu
+/u/wzhong/miniconda3/bin/python3
+# packages in environment at /u/wzhong/miniconda3:
+#
+# Name                    Version                   Build  Channel
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py:2059: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Traceback (most recent call last):
+  File "/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2209, in _run_ninja_build
+    subprocess.run(
+  File "/u/wzhong/miniconda3/lib/python3.12/subprocess.py", line 573, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/u/wzhong/PhD/FairCompare/geo_hidden_identification.py", line 13, in <module>
+    from utils_geo import train_model, test_model
+  File "/u/wzhong/PhD/FairCompare/utils_geo.py", line 13, in <module>
+    from models.chamfer_distance.chamfer_distance import ChamferDistance
+  File "/u/wzhong/PhD/FairCompare/models/chamfer_distance/__init__.py", line 1, in <module>
+    from .chamfer_distance import ChamferDistance
+  File "/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.py", line 7, in <module>
+    cd = load(name="cd",
+         ^^^^^^^^^^^^^^^
+  File "/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 1380, in load
+    return _jit_compile(
+           ^^^^^^^^^^^^^
+  File "/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 1798, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 1926, in _write_ninja_file_and_build_library
+    _run_ninja_build(
+  File "/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2225, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error building extension 'cd': [1/3] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output chamfer_distance.cuda.o.d -DTORCH_EXTENSION_NAME=cd -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/TH -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /u/wzhong/miniconda3/include/python3.12 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_80,code=compute_80 -gencode=arch=compute_80,code=sm_80 --compiler-options '-fPIC' -std=c++17 -c /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cu -o chamfer_distance.cuda.o 
+FAILED: chamfer_distance.cuda.o 
+/usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output chamfer_distance.cuda.o.d -DTORCH_EXTENSION_NAME=cd -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/TH -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /u/wzhong/miniconda3/include/python3.12 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_80,code=compute_80 -gencode=arch=compute_80,code=sm_80 --compiler-options '-fPIC' -std=c++17 -c /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cu -o chamfer_distance.cuda.o 
+/bin/sh: /usr/local/cuda/bin/nvcc: No such file or directory
+[2/3] c++ -MMD -MF chamfer_distance.o.d -DTORCH_EXTENSION_NAME=cd -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/TH -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /u/wzhong/miniconda3/include/python3.12 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++17 -c /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp -o chamfer_distance.o 
+FAILED: chamfer_distance.o 
+c++ -MMD -MF chamfer_distance.o.d -DTORCH_EXTENSION_NAME=cd -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/TH -isystem /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /u/wzhong/miniconda3/include/python3.12 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++17 -c /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp -o chamfer_distance.o 
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBase.h:14,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:38,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/c10/util/C++17.h:13:2: error: #error "You're trying to build PyTorch with a too old version of GCC. We need GCC 9 or later."
+ #error \
+  ^~~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp: In function ‘void chamfer_distance_forward_cuda(at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor)’:
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:35:80: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     ChamferDistanceKernelLauncher(xyz1.size(0), xyz1.size(1), xyz1.data<float>(),
+                                                                                ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:36:76: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                             xyz2.size(1), xyz2.data<float>(),
+                                                                            ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:37:63: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                             dist1.data<float>(), idx1.data<int>(),
+                                                               ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:37:81: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                             dist1.data<float>(), idx1.data<int>(),
+                                                                                 ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:38:63: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                             dist2.data<float>(), idx2.data<int>());
+                                                               ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:38:81: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                             dist2.data<float>(), idx2.data<int>());
+                                                                                 ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp: In function ‘void chamfer_distance_backward_cuda(at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor)’:
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:51:84: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     ChamferDistanceGradKernelLauncher(xyz1.size(0), xyz1.size(1), xyz1.data<float>(),
+                                                                                    ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:52:75: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                            xyz2.size(1), xyz2.data<float>(),
+                                                                           ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:53:66: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                            graddist1.data<float>(), idx1.data<int>(),
+                                                                  ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:53:84: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                            graddist1.data<float>(), idx1.data<int>(),
+                                                                                    ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:54:66: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                            graddist2.data<float>(), idx2.data<int>(),
+                                                                  ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:54:84: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                            graddist2.data<float>(), idx2.data<int>(),
+                                                                                    ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:55:65: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                            gradxyz1.data<float>(), gradxyz2.data<float>());
+                                                                 ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:55:89: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+                                            gradxyz1.data<float>(), gradxyz2.data<float>());
+                                                                                         ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp: In function ‘void chamfer_distance_forward(at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor)’:
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:102:47: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     const float* xyz1_data = xyz1.data<float>();
+                                               ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:103:47: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     const float* xyz2_data = xyz2.data<float>();
+                                               ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:104:43: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     float* dist1_data = dist1.data<float>();
+                                           ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:105:43: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     float* dist2_data = dist2.data<float>();
+                                           ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:106:37: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     int* idx1_data = idx1.data<int>();
+                                     ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:107:37: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     int* idx2_data = idx2.data<int>();
+                                     ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp: In function ‘void chamfer_distance_backward(at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor)’:
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:128:47: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     const float* xyz1_data = xyz1.data<float>();
+                                               ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:129:47: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     const float* xyz2_data = xyz2.data<float>();
+                                               ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:130:49: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     float* gradxyz1_data = gradxyz1.data<float>();
+                                                 ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:131:49: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     float* gradxyz2_data = gradxyz2.data<float>();
+                                                 ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:132:51: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     float* graddist1_data = graddist1.data<float>();
+                                                   ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:133:51: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     float* graddist2_data = graddist2.data<float>();
+                                                   ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:134:43: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     const int* idx1_data = idx1.data<int>();
+                                           ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+/u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:135:43: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+     const int* idx2_data = idx2.data<int>();
+                                           ^
+In file included from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /u/wzhong/PhD/FairCompare/models/chamfer_distance/chamfer_distance.cpp:1:
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/include/ATen/core/TensorBody.h:247:7: note: declared here
+   T * data() const {
+       ^~~~
+ninja: build stopped: subcommand failed.
+

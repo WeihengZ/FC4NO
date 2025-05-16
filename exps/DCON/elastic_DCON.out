@@ -1,0 +1,583 @@
+
+Currently Loaded Modules:
+  1) openmpi/4.1.6
+
+ 
+
+job is starting on gpua035.delta.ncsa.illinois.edu
+/u/wzhong/miniconda3/bin/python3
+# packages in environment at /u/wzhong/miniconda3:
+#
+# Name                    Version                   Build  Channel
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+No Nvidia modulus is detected.
+Creating data loaders...
+Data loaders created: Train=1800, Val=300, Test=900
+Creating data loaders...
+Not finding in path 2
+Loading pretrained model ...
+model training ...
+validating
+Current best validation errs by now: 1.6502997382481892
+Epoch 1/400, Loss: 0.00406910
+Epoch 2/400, Loss: 0.00153297
+Epoch 3/400, Loss: 0.00332773
+Epoch 4/400, Loss: 0.00052084
+Epoch 5/400, Loss: 0.00032252
+validating
+Current best validation errs by now: 0.11458757370710373
+Epoch 6/400, Loss: 0.00018838
+Epoch 7/400, Loss: 0.00024918
+Epoch 8/400, Loss: 0.00017056
+Epoch 9/400, Loss: 0.00025600
+Epoch 10/400, Loss: 0.00024319
+validating
+Current best validation errs by now: 0.0741663554807504
+Epoch 11/400, Loss: 0.00021633
+Epoch 12/400, Loss: 0.00031385
+Epoch 13/400, Loss: 0.00018080
+Epoch 14/400, Loss: 0.00023821
+Epoch 15/400, Loss: 0.00021915
+validating
+Current best validation errs by now: 0.05938897378742695
+Epoch 16/400, Loss: 0.00012770
+Epoch 17/400, Loss: 0.00010881
+Epoch 18/400, Loss: 0.00065076
+Epoch 19/400, Loss: 0.00006781
+Epoch 20/400, Loss: 0.00003234
+validating
+Current best validation errs by now: 0.046073257128397625
+Epoch 21/400, Loss: 0.00006886
+Epoch 22/400, Loss: 0.00005770
+Epoch 23/400, Loss: 0.00012589
+Epoch 24/400, Loss: 0.00014321
+Epoch 25/400, Loss: 0.00005912
+validating
+Current best validation errs by now: 0.046073257128397625
+Epoch 26/400, Loss: 0.00012649
+Epoch 27/400, Loss: 0.00051809
+Epoch 28/400, Loss: 0.00002573
+Epoch 29/400, Loss: 0.00007314
+Epoch 30/400, Loss: 0.00005555
+validating
+Current best validation errs by now: 0.033571686161061126
+Epoch 31/400, Loss: 0.00020370
+Epoch 32/400, Loss: 0.00039341
+Epoch 33/400, Loss: 0.00009761
+Epoch 34/400, Loss: 0.00033999
+Epoch 35/400, Loss: 0.00035555
+validating
+Current best validation errs by now: 0.033571686161061126
+Epoch 36/400, Loss: 0.00019847
+Epoch 37/400, Loss: 0.00012458
+Epoch 38/400, Loss: 0.00049196
+Epoch 39/400, Loss: 0.00002684
+Epoch 40/400, Loss: 0.00010618
+validating
+Current best validation errs by now: 0.033571686161061126
+Epoch 41/400, Loss: 0.00018585
+Epoch 42/400, Loss: 0.00003051
+Epoch 43/400, Loss: 0.00004619
+Epoch 44/400, Loss: 0.00017516
+Epoch 45/400, Loss: 0.00005029
+validating
+Current best validation errs by now: 0.033571686161061126
+Epoch 46/400, Loss: 0.00011089
+Epoch 47/400, Loss: 0.00013642
+Epoch 48/400, Loss: 0.00003652
+Epoch 49/400, Loss: 0.00071746
+Epoch 50/400, Loss: 0.00040658
+validating
+Current best validation errs by now: 0.033571686161061126
+Epoch 51/400, Loss: 0.00008265
+Epoch 52/400, Loss: 0.00013460
+Epoch 53/400, Loss: 0.00006112
+Epoch 54/400, Loss: 0.00002819
+Epoch 55/400, Loss: 0.00004291
+validating
+Current best validation errs by now: 0.027568288625528414
+Epoch 56/400, Loss: 0.00001674
+Epoch 57/400, Loss: 0.00001568
+Epoch 58/400, Loss: 0.00004783
+Epoch 59/400, Loss: 0.00020048
+Epoch 60/400, Loss: 0.00002365
+validating
+Current best validation errs by now: 0.024226874131709337
+Epoch 61/400, Loss: 0.00003980
+Epoch 62/400, Loss: 0.00001371
+Epoch 63/400, Loss: 0.00004286
+Epoch 64/400, Loss: 0.00008639
+Epoch 65/400, Loss: 0.00002361
+validating
+Current best validation errs by now: 0.024226874131709337
+Epoch 66/400, Loss: 0.00001576
+Epoch 67/400, Loss: 0.00005783
+Epoch 68/400, Loss: 0.00005536
+Epoch 69/400, Loss: 0.00001135
+Epoch 70/400, Loss: 0.00003684
+validating
+Current best validation errs by now: 0.024226874131709337
+Epoch 71/400, Loss: 0.00002242
+Epoch 72/400, Loss: 0.00010252
+Epoch 73/400, Loss: 0.00002191
+Epoch 74/400, Loss: 0.00001396
+Epoch 75/400, Loss: 0.00003748
+validating
+Current best validation errs by now: 0.024226874131709337
+Epoch 76/400, Loss: 0.00008836
+Epoch 77/400, Loss: 0.00002693
+Epoch 78/400, Loss: 0.00002076
+Epoch 79/400, Loss: 0.00001741
+Epoch 80/400, Loss: 0.00006493
+validating
+Current best validation errs by now: 0.024226874131709337
+Epoch 81/400, Loss: 0.00003494
+Epoch 82/400, Loss: 0.00003118
+Epoch 83/400, Loss: 0.00004742
+Epoch 84/400, Loss: 0.00013613
+Epoch 85/400, Loss: 0.00002267
+validating
+Current best validation errs by now: 0.023184350201239188
+Epoch 86/400, Loss: 0.00050476
+Epoch 87/400, Loss: 0.00002764
+Epoch 88/400, Loss: 0.00016916
+Epoch 89/400, Loss: 0.00004461
+Epoch 90/400, Loss: 0.00001527
+validating
+Current best validation errs by now: 0.023184350201239188
+Epoch 91/400, Loss: 0.00001218
+Epoch 92/400, Loss: 0.00002452
+Epoch 93/400, Loss: 0.00002334
+Epoch 94/400, Loss: 0.00002221
+Epoch 95/400, Loss: 0.00002021
+validating
+Current best validation errs by now: 0.023184350201239188
+Epoch 96/400, Loss: 0.00002324
+Epoch 97/400, Loss: 0.00004079
+Epoch 98/400, Loss: 0.00001193
+Epoch 99/400, Loss: 0.00001177
+Epoch 100/400, Loss: 0.00007969
+validating
+Current best validation errs by now: 0.023183385462810596
+Epoch 101/400, Loss: 0.00009387
+Epoch 102/400, Loss: 0.00002903
+Epoch 103/400, Loss: 0.00001993
+Epoch 104/400, Loss: 0.00015615
+Epoch 105/400, Loss: 0.00001304
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 106/400, Loss: 0.00001965
+Epoch 107/400, Loss: 0.00001243
+Epoch 108/400, Loss: 0.00004846
+Epoch 109/400, Loss: 0.00011905
+Epoch 110/400, Loss: 0.00001435
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 111/400, Loss: 0.00001539
+Epoch 112/400, Loss: 0.00001471
+Epoch 113/400, Loss: 0.00002276
+Epoch 114/400, Loss: 0.00005563
+Epoch 115/400, Loss: 0.00008048
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 116/400, Loss: 0.00004321
+Epoch 117/400, Loss: 0.00012717
+Epoch 118/400, Loss: 0.00002201
+Epoch 119/400, Loss: 0.00002215
+Epoch 120/400, Loss: 0.00017755
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 121/400, Loss: 0.00001371
+Epoch 122/400, Loss: 0.00000703
+Epoch 123/400, Loss: 0.00002292
+Epoch 124/400, Loss: 0.00001351
+Epoch 125/400, Loss: 0.00002593
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 126/400, Loss: 0.00001288
+Epoch 127/400, Loss: 0.00022415
+Epoch 128/400, Loss: 0.00002281
+Epoch 129/400, Loss: 0.00001132
+Epoch 130/400, Loss: 0.00002245
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 131/400, Loss: 0.00002120
+Epoch 132/400, Loss: 0.00000631
+Epoch 133/400, Loss: 0.00001050
+Epoch 134/400, Loss: 0.00020405
+Epoch 135/400, Loss: 0.00001588
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 136/400, Loss: 0.00001327
+Epoch 137/400, Loss: 0.00003113
+Epoch 138/400, Loss: 0.00000667
+Epoch 139/400, Loss: 0.00009038
+Epoch 140/400, Loss: 0.00002442
+validating
+Current best validation errs by now: 0.019651290653273465
+Epoch 141/400, Loss: 0.00002610
+Epoch 142/400, Loss: 0.00000693
+Epoch 143/400, Loss: 0.00001663
+Epoch 144/400, Loss: 0.00002626
+Epoch 145/400, Loss: 0.00001719
+validating
+Current best validation errs by now: 0.01732113866135478
+Epoch 146/400, Loss: 0.00004311
+Epoch 147/400, Loss: 0.00002904
+Epoch 148/400, Loss: 0.00001820
+Epoch 149/400, Loss: 0.00011546
+Epoch 150/400, Loss: 0.00003313
+validating
+Current best validation errs by now: 0.016902805687859655
+Epoch 151/400, Loss: 0.00000862
+Epoch 152/400, Loss: 0.00001540
+Epoch 153/400, Loss: 0.00003857
+Epoch 154/400, Loss: 0.00001759
+Epoch 155/400, Loss: 0.00001131
+validating
+Current best validation errs by now: 0.016902805687859655
+Epoch 156/400, Loss: 0.00000823
+Epoch 157/400, Loss: 0.00009859
+Epoch 158/400, Loss: 0.00001291
+Epoch 159/400, Loss: 0.00000989
+Epoch 160/400, Loss: 0.00004024
+validating
+Current best validation errs by now: 0.016902805687859655
+Epoch 161/400, Loss: 0.00004095
+Epoch 162/400, Loss: 0.00004058
+Epoch 163/400, Loss: 0.00007983
+Epoch 164/400, Loss: 0.00004947
+Epoch 165/400, Loss: 0.00001831
+validating
+Current best validation errs by now: 0.016902805687859655
+Epoch 166/400, Loss: 0.00001482
+Epoch 167/400, Loss: 0.00006220
+Epoch 168/400, Loss: 0.00001340
+Epoch 169/400, Loss: 0.00003211
+Epoch 170/400, Loss: 0.00001210
+validating
+Current best validation errs by now: 0.01644111571833491
+Epoch 171/400, Loss: 0.00001014
+Epoch 172/400, Loss: 0.00001017
+Epoch 173/400, Loss: 0.00001132
+Epoch 174/400, Loss: 0.00002207
+Epoch 175/400, Loss: 0.00006710
+validating
+Current best validation errs by now: 0.01644111571833491
+Epoch 176/400, Loss: 0.00006664
+Epoch 177/400, Loss: 0.00001349
+Epoch 178/400, Loss: 0.00000585
+Epoch 179/400, Loss: 0.00000944
+Epoch 180/400, Loss: 0.00002071
+validating
+Current best validation errs by now: 0.01644111571833491
+Epoch 181/400, Loss: 0.00005975
+Epoch 182/400, Loss: 0.00001548
+Epoch 183/400, Loss: 0.00001829
+Epoch 184/400, Loss: 0.00001107
+Epoch 185/400, Loss: 0.00000537
+validating
+Current best validation errs by now: 0.016125678680837155
+Epoch 186/400, Loss: 0.00001242
+Epoch 187/400, Loss: 0.00002902
+Epoch 188/400, Loss: 0.00036415
+Epoch 189/400, Loss: 0.00001203
+Epoch 190/400, Loss: 0.00000701
+validating
+Current best validation errs by now: 0.016125678680837155
+Epoch 191/400, Loss: 0.00000458
+Epoch 192/400, Loss: 0.00001536
+Epoch 193/400, Loss: 0.00006116
+Epoch 194/400, Loss: 0.00001117
+Epoch 195/400, Loss: 0.00004823
+validating
+Current best validation errs by now: 0.016125678680837155
+Epoch 196/400, Loss: 0.00004786
+Epoch 197/400, Loss: 0.00003006
+Epoch 198/400, Loss: 0.00001119
+Epoch 199/400, Loss: 0.00010992
+Epoch 200/400, Loss: 0.00000917
+validating
+Current best validation errs by now: 0.016125678680837155
+Epoch 201/400, Loss: 0.00002707
+Epoch 202/400, Loss: 0.00002905
+Epoch 203/400, Loss: 0.00000442
+Epoch 204/400, Loss: 0.00009219
+Epoch 205/400, Loss: 0.00000855
+validating
+Current best validation errs by now: 0.016097857483352223
+Epoch 206/400, Loss: 0.00000949
+Epoch 207/400, Loss: 0.00041377
+Epoch 208/400, Loss: 0.00001345
+Epoch 209/400, Loss: 0.00001773
+Epoch 210/400, Loss: 0.00010034
+validating
+Current best validation errs by now: 0.016097857483352223
+Epoch 211/400, Loss: 0.00007077
+Epoch 212/400, Loss: 0.00000880
+Epoch 213/400, Loss: 0.00000803
+Epoch 214/400, Loss: 0.00004738
+Epoch 215/400, Loss: 0.00000672
+validating
+Current best validation errs by now: 0.015165955970684687
+Epoch 216/400, Loss: 0.00004253
+Epoch 217/400, Loss: 0.00000718
+Epoch 218/400, Loss: 0.00000698
+Epoch 219/400, Loss: 0.00001148
+Epoch 220/400, Loss: 0.00000404
+validating
+Current best validation errs by now: 0.015165955970684687
+Epoch 221/400, Loss: 0.00005423
+Epoch 222/400, Loss: 0.00000796
+Epoch 223/400, Loss: 0.00006592
+Epoch 224/400, Loss: 0.00000989
+Epoch 225/400, Loss: 0.00000485
+validating
+Current best validation errs by now: 0.015165955970684687
+Epoch 226/400, Loss: 0.00001889
+Epoch 227/400, Loss: 0.00000868
+Epoch 228/400, Loss: 0.00003482
+Epoch 229/400, Loss: 0.00001233
+Epoch 230/400, Loss: 0.00001585
+validating
+Current best validation errs by now: 0.015165955970684687
+Epoch 231/400, Loss: 0.00001346
+Epoch 232/400, Loss: 0.00000942
+Epoch 233/400, Loss: 0.00001576
+Epoch 234/400, Loss: 0.00001919
+Epoch 235/400, Loss: 0.00001578
+validating
+Current best validation errs by now: 0.015165955970684687
+Epoch 236/400, Loss: 0.00000649
+Epoch 237/400, Loss: 0.00001829
+Epoch 238/400, Loss: 0.00004157
+Epoch 239/400, Loss: 0.00000839
+Epoch 240/400, Loss: 0.00002617
+validating
+Current best validation errs by now: 0.015165955970684687
+Epoch 241/400, Loss: 0.00000758
+Epoch 242/400, Loss: 0.00001344
+Epoch 243/400, Loss: 0.00002199
+Epoch 244/400, Loss: 0.00003217
+Epoch 245/400, Loss: 0.00000638
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 246/400, Loss: 0.00000719
+Epoch 247/400, Loss: 0.00003380
+Epoch 248/400, Loss: 0.00003321
+Epoch 249/400, Loss: 0.00002275
+Epoch 250/400, Loss: 0.00000506
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 251/400, Loss: 0.00001689
+Epoch 252/400, Loss: 0.00005793
+Epoch 253/400, Loss: 0.00000418
+Epoch 254/400, Loss: 0.00001159
+Epoch 255/400, Loss: 0.00004986
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 256/400, Loss: 0.00003903
+Epoch 257/400, Loss: 0.00000361
+Epoch 258/400, Loss: 0.00003720
+Epoch 259/400, Loss: 0.00001542
+Epoch 260/400, Loss: 0.00017525
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 261/400, Loss: 0.00000921
+Epoch 262/400, Loss: 0.00029872
+Epoch 263/400, Loss: 0.00009713
+Epoch 264/400, Loss: 0.00000524
+Epoch 265/400, Loss: 0.00002924
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 266/400, Loss: 0.00000708
+Epoch 267/400, Loss: 0.00000593
+Epoch 268/400, Loss: 0.00002924
+Epoch 269/400, Loss: 0.00002607
+Epoch 270/400, Loss: 0.00002314
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 271/400, Loss: 0.00001008
+Epoch 272/400, Loss: 0.00000697
+Epoch 273/400, Loss: 0.00000944
+Epoch 274/400, Loss: 0.00001190
+Epoch 275/400, Loss: 0.00000927
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 276/400, Loss: 0.00001657
+Epoch 277/400, Loss: 0.00001079
+Epoch 278/400, Loss: 0.00001062
+Epoch 279/400, Loss: 0.00001008
+Epoch 280/400, Loss: 0.00003079
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 281/400, Loss: 0.00001918
+Epoch 282/400, Loss: 0.00000869
+Epoch 283/400, Loss: 0.00000729
+Epoch 284/400, Loss: 0.00000600
+Epoch 285/400, Loss: 0.00001861
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 286/400, Loss: 0.00000783
+Epoch 287/400, Loss: 0.00014497
+Epoch 288/400, Loss: 0.00000346
+Epoch 289/400, Loss: 0.00002682
+Epoch 290/400, Loss: 0.00001474
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 291/400, Loss: 0.00000879
+Epoch 292/400, Loss: 0.00001133
+Epoch 293/400, Loss: 0.00000567
+Epoch 294/400, Loss: 0.00006527
+Epoch 295/400, Loss: 0.00002465
+validating
+Current best validation errs by now: 0.014136277918393413
+Epoch 296/400, Loss: 0.00000878
+Epoch 297/400, Loss: 0.00005443
+Epoch 298/400, Loss: 0.00000824
+Epoch 299/400, Loss: 0.00005100
+Epoch 300/400, Loss: 0.00002224
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 301/400, Loss: 0.00000922
+Epoch 302/400, Loss: 0.00001363
+Epoch 303/400, Loss: 0.00000432
+Epoch 304/400, Loss: 0.00002513
+Epoch 305/400, Loss: 0.00005979
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 306/400, Loss: 0.00000601
+Epoch 307/400, Loss: 0.00002215
+Epoch 308/400, Loss: 0.00002665
+Epoch 309/400, Loss: 0.00009009
+Epoch 310/400, Loss: 0.00001716
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 311/400, Loss: 0.00001100
+Epoch 312/400, Loss: 0.00002566
+Epoch 313/400, Loss: 0.00002703
+Epoch 314/400, Loss: 0.00000487
+Epoch 315/400, Loss: 0.00000844
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 316/400, Loss: 0.00008143
+Epoch 317/400, Loss: 0.00006257
+Epoch 318/400, Loss: 0.00000697
+Epoch 319/400, Loss: 0.00000350
+Epoch 320/400, Loss: 0.00002013
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 321/400, Loss: 0.00000817
+Epoch 322/400, Loss: 0.00001137
+Epoch 323/400, Loss: 0.00000766
+Epoch 324/400, Loss: 0.00001035
+Epoch 325/400, Loss: 0.00003876
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 326/400, Loss: 0.00000720
+Epoch 327/400, Loss: 0.00013124
+Epoch 328/400, Loss: 0.00000996
+Epoch 329/400, Loss: 0.00001517
+Epoch 330/400, Loss: 0.00000461
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 331/400, Loss: 0.00000845
+Epoch 332/400, Loss: 0.00003236
+Epoch 333/400, Loss: 0.00000411
+Epoch 334/400, Loss: 0.00001012
+Epoch 335/400, Loss: 0.00003954
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 336/400, Loss: 0.00001174
+Epoch 337/400, Loss: 0.00001083
+Epoch 338/400, Loss: 0.00004532
+Epoch 339/400, Loss: 0.00000977
+Epoch 340/400, Loss: 0.00000680
+validating
+Current best validation errs by now: 0.013688952956969539
+Epoch 341/400, Loss: 0.00001396
+Epoch 342/400, Loss: 0.00002835
+Epoch 343/400, Loss: 0.00004805
+Epoch 344/400, Loss: 0.00000741
+Epoch 345/400, Loss: 0.00000714
+validating
+Current best validation errs by now: 0.013172886750350396
+Epoch 346/400, Loss: 0.00002292
+Epoch 347/400, Loss: 0.00000344
+Epoch 348/400, Loss: 0.00001041
+Epoch 349/400, Loss: 0.00007847
+Epoch 350/400, Loss: 0.00005068
+validating
+Current best validation errs by now: 0.013172886750350396
+Epoch 351/400, Loss: 0.00004959
+Epoch 352/400, Loss: 0.00000556
+Epoch 353/400, Loss: 0.00000565
+Epoch 354/400, Loss: 0.00001097
+Epoch 355/400, Loss: 0.00001069
+validating
+Current best validation errs by now: 0.013172886750350396
+Epoch 356/400, Loss: 0.00001312
+Epoch 357/400, Loss: 0.00001626
+Epoch 358/400, Loss: 0.00000786
+Epoch 359/400, Loss: 0.00001195
+Epoch 360/400, Loss: 0.00000761
+validating
+Current best validation errs by now: 0.013172886750350396
+Epoch 361/400, Loss: 0.00000544
+Epoch 362/400, Loss: 0.00000663
+Epoch 363/400, Loss: 0.00004610
+Epoch 364/400, Loss: 0.00001859
+Epoch 365/400, Loss: 0.00001303
+validating
+Current best validation errs by now: 0.013172886750350396
+Epoch 366/400, Loss: 0.00006449
+Epoch 367/400, Loss: 0.00000943
+Epoch 368/400, Loss: 0.00000656
+Epoch 369/400, Loss: 0.00001003
+Epoch 370/400, Loss: 0.00000952
+validating
+Current best validation errs by now: 0.013172886750350396
+Epoch 371/400, Loss: 0.00000398
+Epoch 372/400, Loss: 0.00007411
+Epoch 373/400, Loss: 0.00001150
+Epoch 374/400, Loss: 0.00000713
+Epoch 375/400, Loss: 0.00000743
+validating
+Current best validation errs by now: 0.012771774387607971
+Epoch 376/400, Loss: 0.00000603
+Epoch 377/400, Loss: 0.00000581
+Epoch 378/400, Loss: 0.00001576
+Epoch 379/400, Loss: 0.00001552
+Epoch 380/400, Loss: 0.00001383
+validating
+Current best validation errs by now: 0.012771774387607971
+Epoch 381/400, Loss: 0.00001420
+Epoch 382/400, Loss: 0.00000456
+Epoch 383/400, Loss: 0.00000660
+Epoch 384/400, Loss: 0.00008290
+Epoch 385/400, Loss: 0.00005330
+validating
+Current best validation errs by now: 0.012771774387607971
+Epoch 386/400, Loss: 0.00002051
+Epoch 387/400, Loss: 0.00036367
+Epoch 388/400, Loss: 0.00001592
+Epoch 389/400, Loss: 0.00001755
+Epoch 390/400, Loss: 0.00000758
+validating
+Current best validation errs by now: 0.012771774387607971
+Epoch 391/400, Loss: 0.00001063
+Epoch 392/400, Loss: 0.00001993
+Epoch 393/400, Loss: 0.00000602
+Epoch 394/400, Loss: 0.00001146
+Epoch 395/400, Loss: 0.00017957
+validating
+Current best validation errs by now: 0.012771774387607971
+Epoch 396/400, Loss: 0.00001621
+Epoch 397/400, Loss: 0.00000351
+Epoch 398/400, Loss: 0.00001846
+Epoch 399/400, Loss: 0.00000993
+Epoch 400/400, Loss: 0.00000594
+total training time: 8395.859563589096 seconds
+evalute average performance on 900 samples
+average stess relative err: 0.01824752142135468

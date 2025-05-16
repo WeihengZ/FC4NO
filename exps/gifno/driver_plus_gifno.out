@@ -1,0 +1,76 @@
+
+====================
+== NVIDIA Modulus ==
+====================
+
+NVIDIA Release 24.09 (build 18526012)
+Modulus PyPi Version 0.9.0 (Git Commit: eb01d2a)
+Modulus Sym PyPi Version 1.7.0 (Git Commit: 249b76a)
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 12.6 driver version 560.35.03 with kernel driver version 550.144.03.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+job is starting on gpua055.delta.ncsa.illinois.edu
+Python 3.10.12
+/usr/local/lib/python3.10/dist-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/usr/local/lib/python3.10/dist-packages/torch/functional.py:512: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3587.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Warp 1.3.3 initialized:
+   CUDA Toolkit 12.5, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A100-SXM4-40GB" (39 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /u/wzhong/.cache/warp/1.3.3
+Creating data loaders...
+Not finding in path 1
+Creating data loaders...
+Data loaders created: Train=2133, Val=355, Test=1067
+Loading pretrained model ...
+model training ...
+Module modulus.models.figconvnet.warp_neighbor_search 7da5518 load on device 'cuda:0' took 648.75 ms  (compiled)
+Epoch 1/400, Loss: 0.00286891
+validating
+Current best validation errs by now: 0.2318522598122207
+Epoch 2/400, Loss: 0.00273587
+Epoch 3/400, Loss: 0.00264211
+validating
+Current best validation errs by now: 0.21446378419936543
+Epoch 4/400, Loss: 0.00256839
+Epoch 5/400, Loss: 0.00248351
+validating
+Current best validation errs by now: 0.20785044754894685
+Epoch 6/400, Loss: 0.00242911
+Epoch 7/400, Loss: 0.00237069
+validating
+Current best validation errs by now: 0.20785044754894685
+Epoch 8/400, Loss: 0.00233229
+Epoch 9/400, Loss: 0.00228902
+validating
+Current best validation errs by now: 0.1987515175006759
+Epoch 10/400, Loss: 0.00225174
+Epoch 11/400, Loss: 0.00222489
+validating
+Current best validation errs by now: 0.1957607925777704
+slurmstepd: error: *** JOB 8981154 ON gpua055 CANCELLED AT 2025-04-09T19:27:10 DUE TO TIME LIMIT ***

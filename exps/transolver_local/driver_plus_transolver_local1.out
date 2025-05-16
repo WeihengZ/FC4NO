@@ -1,0 +1,35 @@
+
+Currently Loaded Modules:
+  1) openmpi/4.1.6
+
+ 
+
+job is starting on gpua027.delta.ncsa.illinois.edu
+/u/wzhong/miniconda3/bin/python3
+# packages in environment at /u/wzhong/miniconda3:
+#
+# Name                    Version                   Build  Channel
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+No Nvidia modulus is detected.
+Creating data loaders...
+Data loaders created: Train=2378, Val=396, Test=1190
+Loading pretrained model ...
+No trained model
+model training ...
+validating
+Current best validation errs by now: 0.8091262595521079
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+Epoch 1/400, Loss: 822.30024131
+Epoch 2/400, Loss: 309.98845457
+Epoch 3/400, Loss: 238.20533116
+Epoch 4/400, Loss: 207.89635608
+Epoch 5/400, Loss: 188.86340865
+validating
+Current best validation errs by now: 0.20761438598385965
+Epoch 6/400, Loss: 176.63062632
+Epoch 7/400, Loss: 168.64910710
+Epoch 8/400, Loss: 159.91480024
+Epoch 9/400, Loss: 154.88805062
+slurmstepd: error: *** JOB 9457731 ON gpua027 CANCELLED AT 2025-04-29T08:36:02 ***

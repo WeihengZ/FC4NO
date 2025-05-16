@@ -1,0 +1,96 @@
+
+====================
+== NVIDIA Modulus ==
+====================
+
+NVIDIA Release 24.09 (build 18526012)
+Modulus PyPi Version 0.9.0 (Git Commit: eb01d2a)
+Modulus Sym PyPi Version 1.7.0 (Git Commit: 249b76a)
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 12.6 driver version 560.35.03 with kernel driver version 550.144.03.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+job is starting on gpua085.delta.ncsa.illinois.edu
+Python 3.10.12
+/usr/local/lib/python3.10/dist-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/usr/local/lib/python3.10/dist-packages/torch/functional.py:512: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3587.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Warp 1.3.3 initialized:
+   CUDA Toolkit 12.5, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A100-SXM4-40GB" (39 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /u/wzhong/.cache/warp/1.3.3
+Creating data loaders...
+Data loaders created: Train=2378, Val=396, Test=1190
+Loading pretrained model ...
+No trained model
+model training ...
+validating
+Module modulus.models.figconvnet.warp_neighbor_search 7da5518 load on device 'cuda:0' took 2441.29 ms  (compiled)
+Current best validation errs by now: 0.7780038123876734
+Epoch 1/400, Loss: 494.92784079
+validating
+Current best validation errs by now: 0.26424671143067796
+Epoch 2/400, Loss: 262.93137526
+validating
+Current best validation errs by now: 0.24444704215826357
+Epoch 3/400, Loss: 208.69957659
+validating
+Current best validation errs by now: 0.21160340648774242
+Epoch 4/400, Loss: 184.72090738
+validating
+Current best validation errs by now: 0.1987569125524281
+Epoch 5/400, Loss: 167.90493025
+validating
+Current best validation errs by now: 0.1987569125524281
+Epoch 6/400, Loss: 159.68068421
+validating
+Current best validation errs by now: 0.18860440827198044
+Epoch 7/400, Loss: 152.71584717
+validating
+Current best validation errs by now: 0.18860440827198044
+Epoch 8/400, Loss: 147.50417629
+validating
+Current best validation errs by now: 0.18226073731185008
+Epoch 9/400, Loss: 142.92004710
+validating
+Current best validation errs by now: 0.18226073731185008
+Epoch 10/400, Loss: 141.51855699
+validating
+Current best validation errs by now: 0.17452805486168552
+Epoch 11/400, Loss: 137.97925156
+validating
+Current best validation errs by now: 0.17210874826505568
+Epoch 12/400, Loss: 135.64243145
+validating
+Current best validation errs by now: 0.167889792907629
+Epoch 13/400, Loss: 133.87572087
+validating
+Current best validation errs by now: 0.167889792907629
+Epoch 14/400, Loss: 131.89990907
+validating
+Current best validation errs by now: 0.167889792907629
+slurmstepd: error: *** JOB 9304036 ON gpua085 CANCELLED AT 2025-04-23T22:32:54 DUE TO TIME LIMIT ***

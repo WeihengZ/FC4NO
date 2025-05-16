@@ -1,0 +1,75 @@
+
+====================
+== NVIDIA Modulus ==
+====================
+
+NVIDIA Release 24.09 (build 18526012)
+Modulus PyPi Version 0.9.0 (Git Commit: eb01d2a)
+Modulus Sym PyPi Version 1.7.0 (Git Commit: 249b76a)
+Container image Copyright (c) 2024, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+Copyright (c) 2014-2024 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+NOTE: CUDA Forward Compatibility mode ENABLED.
+  Using CUDA 12.6 driver version 560.35.03 with kernel driver version 550.144.03.
+  See https://docs.nvidia.com/deploy/cuda-compatibility/ for details.
+
+job is starting on gpua060.delta.ncsa.illinois.edu
+Python 3.10.12
+/usr/local/lib/python3.10/dist-packages/torch_geometric/deprecation.py:22: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/usr/local/lib/python3.10/dist-packages/torch/functional.py:512: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3587.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Warp 1.3.3 initialized:
+   CUDA Toolkit 12.5, Driver 12.6
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A100-SXM4-40GB" (39 GiB, sm_80, mempool enabled)
+   Kernel cache:
+     /u/wzhong/.cache/warp/1.3.3
+Creating data loaders...
+Not finding in path 1
+Creating data loaders...
+Data loaders created: Train=2133, Val=355, Test=1067
+Loading pretrained model ...
+No trained model
+model training ...
+/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:744: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Module modulus.models.figconvnet.warp_neighbor_search 7da5518 load on device 'cuda:0' took 696.70 ms  (compiled)
+Epoch 1/400, Loss: 0.45212163
+validating
+Current best validation errs by now: 0.4973512242377644
+Epoch 2/400, Loss: 0.00967672
+Epoch 3/400, Loss: 0.00640953
+Epoch 4/400, Loss: 0.00487412
+Epoch 5/400, Loss: 0.00400495
+Epoch 6/400, Loss: 0.00343232
+validating
+Current best validation errs by now: 0.24001128224419876
+Epoch 7/400, Loss: 0.00305429
+Epoch 8/400, Loss: 0.00276785
+Epoch 9/400, Loss: 0.00259848
+Epoch 10/400, Loss: 0.00247044
+Epoch 11/400, Loss: 0.00237538
+validating
+Current best validation errs by now: 0.20566235117509332
+Epoch 12/400, Loss: 0.00230097
+Epoch 13/400, Loss: 0.00223567
+slurmstepd: error: *** JOB 8962471 ON gpua060 CANCELLED AT 2025-04-09T03:46:25 DUE TO TIME LIMIT ***

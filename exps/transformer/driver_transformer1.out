@@ -1,0 +1,143 @@
+
+Currently Loaded Modules:
+  1) openmpi/4.1.6
+
+ 
+
+job is starting on gpua079.delta.ncsa.illinois.edu
+/u/wzhong/miniconda3/bin/python3
+# packages in environment at /u/wzhong/miniconda3:
+#
+# Name                    Version                   Build  Channel
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+No Nvidia modulus is detected.
+Creating data loaders...
+Data loaders created: Train=2460, Val=410, Test=1230
+Creating data loaders...
+Not finding in path 2
+Loading pretrained model ...
+No trained model
+model training ...
+validating
+Current best validation errs by now: 35.36244974368956
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 1/400, Loss: 0.00004409
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 2/400, Loss: 0.00000368
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 3/400, Loss: 0.00001329
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 4/400, Loss: 0.00001220
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 5/400, Loss: 0.00001273
+validating
+Current best validation errs by now: 0.6935472063901947
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 6/400, Loss: 0.00000594
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 7/400, Loss: 0.00001115
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 8/400, Loss: 0.00000110
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 9/400, Loss: 0.00000643
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 10/400, Loss: 0.00002562
+validating
+Current best validation errs by now: 0.578969931602478
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 11/400, Loss: 0.00001961
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 12/400, Loss: 0.00000580
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 13/400, Loss: 0.00000298
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 14/400, Loss: 0.00000127
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 15/400, Loss: 0.00000892
+validating
+Current best validation errs by now: 0.5304127325371998
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 16/400, Loss: 0.00000687
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 17/400, Loss: 0.00001096
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 18/400, Loss: 0.00000262
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 19/400, Loss: 0.00000041
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 20/400, Loss: 0.00000224
+validating
+Current best validation errs by now: 0.5304127325371998
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 21/400, Loss: 0.00000256
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 22/400, Loss: 0.00002040
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 23/400, Loss: 0.00001699
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 24/400, Loss: 0.00000203
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 25/400, Loss: 0.00000188
+validating
+Current best validation errs by now: 0.5269578078171102
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 26/400, Loss: 0.00000498
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 27/400, Loss: 0.00001596
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 28/400, Loss: 0.00000871
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 29/400, Loss: 0.00000069
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 30/400, Loss: 0.00000072
+validating
+Current best validation errs by now: 0.5056883165022222
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 31/400, Loss: 0.00000108
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 32/400, Loss: 0.00000091
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 33/400, Loss: 0.00002653
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 34/400, Loss: 0.00000226
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 35/400, Loss: 0.00001140
+validating
+Current best validation errs by now: 0.4660523617412986
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 36/400, Loss: 0.00000274
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 37/400, Loss: 0.00000119
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 38/400, Loss: 0.00000753
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 39/400, Loss: 0.00000125
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 40/400, Loss: 0.00001093
+validating
+Current best validation errs by now: 0.4396185295610893
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 41/400, Loss: 0.00000962
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 42/400, Loss: 0.00000265
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 43/400, Loss: 0.00000187
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 44/400, Loss: 0.00000415
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 45/400, Loss: 0.00001144
+validating
+Current best validation errs by now: 0.4396185295610893
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 46/400, Loss: 0.00000462
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 47/400, Loss: 0.00000472
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 48/400, Loss: 0.00000483
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 49/400, Loss: 0.00000053
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 50/400, Loss: 0.00001599
+validating
+slurmstepd: error: *** JOB 8894712 ON gpua079 CANCELLED AT 2025-04-06T07:03:39 DUE TO TIME LIMIT ***

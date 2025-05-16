@@ -1,0 +1,56 @@
+
+Currently Loaded Modules:
+  1) openmpi/4.1.6
+
+ 
+
+job is starting on gpua007.delta.ncsa.illinois.edu
+/u/wzhong/miniconda3/bin/python3
+# packages in environment at /u/wzhong/miniconda3:
+#
+# Name                    Version                   Build  Channel
+/u/wzhong/miniconda3/lib/python3.12/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+No Nvidia modulus is detected.
+Creating data loaders...
+Data loaders created: Train=2460, Val=410, Test=1230
+Creating data loaders...
+Not finding in path 2
+Loading pretrained model ...
+No trained model
+model training ...
+validating
+Current best validation errs by now: 33.29294540126149
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 1/400, Loss: 0.00000926
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 2/400, Loss: 0.00000788
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 3/400, Loss: 0.00000720
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 4/400, Loss: 0.00000705
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 5/400, Loss: 0.00000593
+validating
+Current best validation errs by now: 0.48079043961152795
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 6/400, Loss: 0.00000583
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 7/400, Loss: 0.00000602
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 8/400, Loss: 0.00000477
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 9/400, Loss: 0.00000626
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 10/400, Loss: 0.00000432
+validating
+Current best validation errs by now: 0.43857339598783635
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 11/400, Loss: 0.00000490
+Failed to load /work/hdd/bdsy/wzhong/processed_data/driver/graph2212.pt: PytorchStreamReader failed reading zip archive: failed finding central directory
+Epoch 12/400, Loss: 0.00000443
+slurmstepd: error: *** JOB 8843475 ON gpua007 CANCELLED AT 2025-04-04T06:03:00 DUE TO TIME LIMIT ***
+slurmstepd: error: container_p_join: open failed for /local/slurmjobs/8843475/.ns: No such file or directory
+slurmstepd: error: container_g_join(8843475): No such file or directory
+slurmstepd: error: Container 2754701 in cgroup plugin has 1 processes, giving up after 127 sec
+slurmstepd: error: *** JOB 8843475 STEPD TERMINATED ON gpua007 AT 2025-04-04T06:05:00 DUE TO JOB NOT ENDING WITH SIGNALS ***
