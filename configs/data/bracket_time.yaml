@@ -1,0 +1,9 @@
+last_act: 'sigmoid'
+coor_dim: 3
+geo_param_dim: 0
+load_param_dim: 101
+out_dim: 1
+aabb_min: [-0.2, -0.1, 0.0]
+aabb_max: [1.1, 0.4, 0.2]
+grid_scale: 50
+grid_scale_low: 5

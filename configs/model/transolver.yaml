@@ -1,0 +1,5 @@
+act: 'gelu'
+num_layers: 3
+hidden_dim: 128
+slice_num: 64
+num_head: 8

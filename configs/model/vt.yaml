@@ -1,0 +1,4 @@
+act: 'gelu'
+num_layers: 3
+hidden_dim: 16
+patch_shape: [5,5,5]

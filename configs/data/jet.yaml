@@ -1,0 +1,9 @@
+last_act: 'identity'
+coor_dim: 3
+geo_param_dim: 0
+load_param_dim: 0
+out_dim: 1
+aabb_min: [-2, -8.5, 0.1]
+aabb_max: [3.7, 1.1, 3.3]
+grid_scale: 10
+grid_scale_low: 2
