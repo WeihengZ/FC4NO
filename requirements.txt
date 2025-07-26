@@ -1,0 +1,33 @@
+# Core PyTorch and CUDA
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# PyTorch Geometric and related packages
+torch-geometric>=2.3.0
+torch-scatter>=2.1.0
+torch-sparse>=0.6.0
+torch-cluster>=1.6.0
+torch-spline-conv>=1.2.0
+
+# Scientific computing
+numpy>=1.21.0
+scipy>=1.9.0
+scikit-learn>=1.1.0
+
+# Data processing and visualization
+matplotlib>=3.5.0
+pyvista>=0.38.0
+h5py>=3.7.0
+tqdm>=4.64.0
+
+# Configuration and utilities
+PyYAML>=6.0
+einops>=0.6.0
+jaxtyping>=0.2.0
+
+# NVIDIA Modulus (for Grid models)
+modulus>=23.0.0
+
+# Additional utilities
+pickle5>=0.0.11 
